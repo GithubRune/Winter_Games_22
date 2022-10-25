@@ -14,7 +14,7 @@ mixer.init()
 direction=1
 width=900
 height=500
-speed=8
+speed=13
 sigtekorn_ypos=160
 sigtekorn_xpos=337
 target_ypos=221
@@ -128,7 +128,7 @@ while True:
         else:
             # sigtet uroligt pga skyttens puls
             sigtekorn_ypos = sigtekorn_ypos + (speed * direction)
-            if sigtekorn_ypos < 160 or sigtekorn_ypos > 320:
+            if sigtekorn_ypos < 170 or sigtekorn_ypos > 300:
                 direction = direction * -1
             sigtekorn_rect = sigtekorn.get_rect(center=(sigtekorn_xpos, sigtekorn_ypos))
             target_rect = target.get_rect(center=(target_xpos, target_ypos))
